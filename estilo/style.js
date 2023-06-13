@@ -1,4 +1,4 @@
-//#region SCROLL
+//#region  SCROLL
 const element = document.querySelector("#container_livros");
 
 element.addEventListener('wheel', (event) => {
@@ -11,10 +11,29 @@ element.addEventListener('wheel', (event) => {
 });
 //#endregion SCROLL
 
-//#region MODO ESCURO
+//#region  MODO ESCURO
 
 function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
 }
 //#endregion MODO ESCURO
+
+//#region Pesquisa
+$(document).ready(function() {
+  $.ajax({
+    url: 'pesquisa.php',
+    dataType: 'json',
+    success: function(data) {
+      $.each(data, function(i, item) {
+        var tr = $('<tr>').append(
+          $('<td>').text(item.coluna1),
+          $('<td>').text(item.coluna2),
+          $('<td>').text(item.coluna3)
+        );
+        $('#tabela tbody').append(tr);
+      });
+    }
+  });
+});
+//#endregion
