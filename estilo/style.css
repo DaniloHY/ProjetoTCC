@@ -1,0 +1,146 @@
+html,
+body {
+  margin: 0;
+}
+
+.header-container {
+  display: flex;
+  padding: 1rem;
+  padding-bottom: 1.25rem;
+  padding-left: 3rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.input-search {
+  height: 3rem;
+  width: 20rem;
+  padding: 10px;
+  font-size: 1rem;
+  border-width: 0;
+  border-bottom: 2px solid #606061;
+  outline-color: #606061;
+}
+
+.input-search:focus {
+  border-style: none;
+}
+
+
+
+/* search container styles */
+
+.searchBooksContainer {
+  margin: 3rem 2rem 0rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.book-search {
+  display: grid;
+}
+
+.book-search img {
+  object-fit: cover;
+  width: 250px;
+  border-radius: 0.125rem;
+}
+
+/* main styles */
+
+.main-container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 3rem;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.titulo {
+  font-weight: 500;
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  margin-bottom: 1.25rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cdcdcd;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #919191;
+}
+
+#container_livros {
+  display: flex;
+  overflow-x: scroll;
+  max-width: 120rem;
+  margin: 0 auto;
+
+}
+
+#container_livros a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 8px;
+  background: #0059ff;
+  color: white;
+  padding: 2rem 3rem;
+  margin: 2rem 1rem;
+}
+
+body {
+  padding: 25px;
+  background-color: 0059ff;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: #363636;
+  color: white;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
