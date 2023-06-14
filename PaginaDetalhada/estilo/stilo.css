@@ -35,12 +35,7 @@
     
 }
 
- .navigation ul{
-     display: flex;
-     align-items: center;
-     gap: 5rem;
- }
- 
+
 .navigation .logo{
     
     height: 78px;
@@ -76,14 +71,15 @@
  }
 
  .btn_visu{
+    background-color: white;
     box-sizing: border-box;
-    width: 300px;
+    width: 200px;
     height: 80px;
     left: 45px;
     top: 628px;
     padding: 37px 0px ;
     border: 3px solid #0078D4;
-    border-radius: 10px;
+    border-radius: 70px;
     margin-top: 40px;
     margin-left: 60px;
     font-family: 'Libre Franklin';
@@ -122,20 +118,20 @@
  
  .agrupa_livros{
      
-    max-width: 100vw;
+     max-width: 100vw;
      display:flex ;
-     flex-direction: row;
-     padding: 20px;
+     padding: 10px;
      
  }
  .sinopse{
-   
-    margin-top: 30px;
-    width: 100%;
+    
+    margin-top: 10px;
+    width: 90%;
     height: 215px;
     top: 218px;
     text-align: center;
     max-height: 600px;
+    margin-left: 90px;
    
  }
  .titulo{
@@ -147,37 +143,11 @@
         line-height: 42px;
         letter-spacing: 0em;
         margin-top: 30px;
+        margin-left: 150px;
     
  }
- .avalie1{
+ 
 
-   margin-bottom: -25px;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 29px;
-    height: 51px;
-    top: 532px;
-    margin-top: 40px;
-   
-  
- }
- .avalie-icone{
-    width: 218px;
-    height: 51px;
-    top: 532px;
-    text-align: right;
-    margin-top: 20px;
-    
- }
- .Avalia_livro{
-   height: 20vh;
-   border-bottom: 1px solid gray;
-   display: flex;
-   justify-content: center;
-   text-align: center;
-   flex-direction: column;
-   align-items: center;
- }
  .Informa_livro{
    display: flex;
    justify-content: center;
@@ -186,7 +156,9 @@
    font-style: normal;
    font-weight: 500;
    font-size: 18px;
-   padding: 100px;
+   padding: 70px;
+   margin-left: 200px;
+
    }
 .ano_lanca{
     
@@ -196,8 +168,9 @@
 }
 
 body {
-   padding: 25px;
-   background-color: white;
+   align-items: center;
+   padding: 10px;
+   background-color: #baccdf;
    color: black;
    font-size: 25px;
  }
@@ -231,8 +204,328 @@ body {
    overflow: hidden;
    outline: none;
  }
+
+ @media screen and (max-width : 930px){
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Popins', sans-serif;
+      text-decoration: none;
+      list-style: none;
+     
+  }
  
-@media only screen and (max-width: 1200px) {
+   body{
+    
+      /* background-color: red; */
+      padding: 10px;
+       
+   
+   }
+   
+   .titulo{
+      font-family: Libre Franklin;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 5px;
+      letter-spacing: 0em;
+      margin-top: 10px;
+      margin-left: 80px;
+  
+}
+  .sinopse{   
+      text-align:  start;
+      display: flex; 
+      margin-top: 3%;
+      width: 90%;
+      height: 215px;
+      top: 100px;
+      max-height: 200px;
+      margin-left: 50px;
+      
+      
+   
+   }
+   .agrupa_livros{
+      justify-content: center;
+      max-width: 100vw;
+      display:flex ;
+      padding: 5px;
+      
+  }
+
+  .img{
+      margin-right: 70px;
+       display: flex;
+       align-items: center;
+       text-align: center;
+       justify-content: space-between;
+       padding: 15px;
+        width: 170px;
+    }
+
+    .btn_visu {
+      width: 80px;
+      height: 20px;
+      left: 25px;
+      border-radius: 20px;
+      margin: 30px;
+      cursor: pointer;
+       
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 15px;
+       
+    }
+   
+
+   
+   
+
+   .Informa_livro{
+      
+   display: flex;
+   justify-content: center;
+   margin-top: 106px; 
+   font-family: 'Libre Franklin';
+   font-style: normal;
+   font-weight: 200;
+   font-size: 17px;
+   padding: 70px;
+   margin-left: 50px;
+
+   }
+
+
+      
+   }
+
+   @media screen and (max-width : 730px){
+    
+
+      body{ 
+         padding-right: 100px;
+       
+      }
+
+      .btn_visu {
+         width: 60px;
+         height: 5px;
+         border-radius: 20px;
+         margin: 30px;
+         cursor: pointer;
+         font-weight: 700;
+         font-size: 15px;
+         line-height: 15px;
+          
+       }
+
+       .img{
+         margin-right: 5px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: space-between;
+          padding: 15px;
+           width: 120px;
+       }
+
+         
+   .titulo{
+      font-family: Libre Franklin;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 1px;
+      letter-spacing: 0em;
+      margin-top: 0;
+      margin-left:90px;
+  
+}
+
+
+.Informa_livro{
+      
+   display: flex;
+   justify-content: center;
+   margin-top: 105px; 
+   font-family: 'Libre Franklin';
+   font-style: normal;
+   font-weight: 200;
+   font-size: 17px;
+   padding: 80px;
+   width: 90%;
+    
+    
+   }
+
+    /* .agrupa_livros{
+      justify-content: center;
+      max-width: 100vw;
+      display:flex ; 
+      
+  } */   
+
+
+
+  .sinopse{   
+    text-align:start;
+     display: flex; 
+     margin-top: 10px;
+     width: 127%;
+     height: 200px;
+     top: 80px;
+     max-height: 200px;
+     margin-right: 270px;
+     font-size: 15px;
+    font-weight: 500; 
+    padding: 5px;
+   
+  }
+
+   }
+
+   @media screen and (max-width : 560px){
+
+
+    body{
+        
+         padding-right: 100px;
+         
+      }
+
+      .titulo{
+         font-family: Libre Franklin;
+         font-size: 15px;
+         font-weight: 700;
+         line-height: 1px;
+         letter-spacing: 0em;
+         margin-top: 10;
+         margin-left:100px;
+     
+   }
+   .img{
+      margin-top: 40px;
+      margin-right: 5px;
+       display: flex;
+       align-items: center;
+       text-align: center;
+       justify-content: space-between;
+       padding: 10px;
+        width: 90px;
+    }
+
+      .sinopse{   
+          
+         text-align:justify;
+         display: flex; 
+         margin-top: 5px;
+         width: 320px;
+         height: 200px;
+         top: 50px;
+         max-height: 200px;
+         margin-right: 270px;
+         font-size: 15px;
+         font-weight: 500; 
+         padding: 0;
+     
+    }
+
+
+    .Informa_livro{
+      
+      display: flex;
+      margin-top: 105px; 
+      font-family: 'Libre Franklin';
+      font-style: normal;
+      font-weight: 200;
+      font-size: 15px;
+      padding: 80px;
+      width: 50%;
+       
+      }
+      .agrupa_livros{
+      
+      width: 50;
+          
+      }
+      
+      .btn_visu {
+       width: 10px;
+      height: 25px;
+      border-radius: 15px;
+      margin: 20px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 19px;
+      display: inline-block;
+      padding: 15px 32px; 
+      margin-left: 10px;
+      padding: 15px 32px;
+      font-size: 16px;
+       margin-top: 30px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     
+   
+   
+   }
+}
+ 
+   /* @media only screen and (max-width: 930px) {
+      .agrupa_livros {
+       flex-direction: column;
+    }
+
+   .img{
+      
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: space-between;
+      padding: 5px;
+      width: 150px;
+    }
+   .btn_visu .livro-content{
+     
+    
+      display: inline-block;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 50px;
+      flex-direction: column;
+       
+    }
+   }
+
+   .agrupa_livros {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+   }
+   .livro-container .btn_visu {
+      display:inline-block;
+   }
+   .container-detalhe-superior .sinopse {
+      text-align: center;
+      width: 100%;
+   }
+   .livro_detalhe {
+      width: 100%;
+   }
+   .livro-container {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+   }
+
+
+ 
+@media only screen and (max-width: 520px) {
    .agrupa_livros {
       flex-direction: column;
    }
@@ -258,4 +551,4 @@ body {
       margin-right: auto;
       width: 50%;
    }
-}
+} */
