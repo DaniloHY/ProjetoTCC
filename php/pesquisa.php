@@ -8,7 +8,7 @@ if ($conn->connect_error) {
 }
 
 // executa uma consulta SQL para obter os dados do banco de dados
-$sql = "SELECT tituloLivro FROM Livros";
+$sql = "SELECT TituloLivro FROM Livros";
 $resultado = $conn->query($sql);
 
 // cria um array para armazenar os dados
