@@ -169,10 +169,11 @@
 
 body {
    align-items: center;
-   padding: 10px;
+ 
    background-color: #baccdf;
    color: black;
    font-size: 25px;
+   padding-right:45px ;
  }
  
  .dark-mode {
@@ -215,11 +216,16 @@ body {
       list-style: none;
      
   }
- 
+   .header-container{
+      
+      height: 90px;
+      line-height: 90px;
+
+   }
    body{
     
-      /* background-color: red; */
-      padding: 10px;
+       /* background-color: red;  */
+      padding-right:1px ;
        
    
    }
@@ -237,12 +243,13 @@ body {
   .sinopse{   
       text-align:  start;
       display: flex; 
-      margin-top: 3%;
+      margin-top: 10px;
       width: 90%;
       height: 215px;
       top: 100px;
-      max-height: 200px;
+      max-height: 100px;
       margin-left: 50px;
+      font-size: 15px;
       
       
    
@@ -287,13 +294,13 @@ body {
       
    display: flex;
    justify-content: center;
-   margin-top: 106px; 
+   margin-top: 150px; 
    font-family: 'Libre Franklin';
    font-style: normal;
    font-weight: 200;
-   font-size: 17px;
+   font-size: 14px;
    padding: 70px;
-   margin-left: 50px;
+   margin-left: 0px;
 
    }
 
@@ -303,11 +310,14 @@ body {
 
    @media screen and (max-width : 730px){
     
+      
 
       body{ 
-         padding-right: 100px;
-       
+          
+         padding-right:1px ;
+         
       }
+
 
       .btn_visu {
          width: 60px;
@@ -346,25 +356,29 @@ body {
 
 .Informa_livro{
       
-   display: flex;
-   justify-content: center;
-   margin-top: 105px; 
+   
+    
+   margin-top: 130px; 
    font-family: 'Libre Franklin';
    font-style: normal;
    font-weight: 200;
-   font-size: 17px;
-   padding: 80px;
-   width: 90%;
+   font-size: 13px;
+   padding: 10px;
+   width: 20%;
+   margin-left: 150px;
+   
+   
+
     
     
    }
 
-    /* .agrupa_livros{
+     .agrupa_livros{
       justify-content: center;
-      max-width: 100vw;
+      max-width: 530px;
       display:flex ; 
       
-  } */   
+  }    
 
 
 
@@ -380,6 +394,8 @@ body {
      font-size: 15px;
     font-weight: 500; 
     padding: 5px;
+    margin-left: 8px;
+    
    
   }
 
@@ -390,8 +406,16 @@ body {
 
     body{
         
-         padding-right: 100px;
+      padding-right:1px ;
          
+      }
+
+      .header-container{
+         position: relative;
+         height: 70px;
+         line-height: 190px;
+   
+   
       }
 
       .titulo{
@@ -400,7 +424,7 @@ body {
          font-weight: 700;
          line-height: 1px;
          letter-spacing: 0em;
-         margin-top: 10;
+         margin-top: 10px;
          margin-left:100px;
      
    }
@@ -439,9 +463,10 @@ body {
       font-family: 'Libre Franklin';
       font-style: normal;
       font-weight: 200;
-      font-size: 15px;
+      font-size: 13px;
       padding: 80px;
       width: 50%;
+      margin-left: 60px;
        
       }
       .agrupa_livros{
